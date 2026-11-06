@@ -2,446 +2,523 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio of a Computer Science and Engineering student.">
-    <title>PixelBloom | My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pranjali's personal portfolio showcasing skills, projects and education.">
+  <meta name="theme-color" content="#7c3aed">
 
-    <link rel="stylesheet" href="style.css">
+  <title>PixelBloom | Personal Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- NAVBAR -->
 <header class="header">
-    <nav class="navbar container">
-        <a href="#home" class="logo">Pixel<span>Bloom.</span></a>
+  <nav class="navbar container">
 
-        <div class="nav-links" id="navLinks">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#education">Education</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
-        </div>
+    <a href="#home" class="logo">Pixel<span>Bloom.</span></a>
 
-        <div class="nav-actions">
-            <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
-                <i class="fas fa-moon"></i>
-            </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#learning">Learning</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </div>
 
-            <button id="menuToggle" class="menu-btn" aria-label="Open navigation" aria-expanded="false">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+
+      <button id="menuToggle" class="icon-btn menu-btn"
+        aria-label="Open navigation" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+  </nav>
 </header>
 
 <main>
 
 <!-- HOME -->
 <section class="hero section" id="home">
-    <div class="container hero-content">
+  <div class="container hero-grid">
 
-        <div class="hero-text reveal">
-            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+    <div class="hero-content reveal">
+      <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
 
-            <h1>Hello, I'm <span>Pranjali</span></h1>
+      <h1>Hello, I'm <span>Pranjali</span></h1>
 
-            <h2>Computer Science & Engineering Student</h2>
+      <h2>Computer Science & Engineering Student</h2>
 
-            <p class="hero-description">
-                I am passionate about technology, programming and learning
-                new skills. I enjoy creating projects and exploring the
-                world of web development.
-            </p>
+      <p class="description">
+        I am passionate about technology, programming and web
+        development. I enjoy learning new skills, creating
+        projects and turning ideas into reality.
+      </p>
 
-            <div class="hero-buttons">
-                <a href="#projects" class="btn primary-btn">
-                    Explore My Work <i class="fas fa-arrow-right"></i>
-                </a>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary-btn">
+          Explore Projects <i class="fas fa-arrow-right"></i>
+        </a>
 
-                <a href="#contact" class="btn secondary-btn">
-                    Contact Me
-                </a>
-            </div>
+        <a href="#contact" class="btn outline-btn">
+          Contact Me
+        </a>
+      </div>
 
-            <div class="social-icons">
-                <a href="mailto:panukoli53@gmail.com" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
+      <div class="social-links">
 
-                <a href="https://github.com/panukoli53-arch"
-                   target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
+        <a href="https://github.com/panukoli53-arch"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
 
-                <a href="https://www.linkedin.com/" target="_blank"
-                   rel="noopener noreferrer" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </div>
-        </div>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=panukoli53@gmail.com"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
 
-        <div class="hero-image reveal">
-            <div class="profile-circle">
-                <i class="fas fa-laptop-code"></i>
-            </div>
-            <div class="floating-card">
-                <i class="fas fa-code"></i>
-                Learning & Growing
-            </div>
-        </div>
+        <a href="https://www.linkedin.com/"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
 
+      </div>
     </div>
+
+    <div class="hero-visual reveal">
+      <div class="profile-circle">
+        <div class="profile-inner">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+      </div>
+
+      <div class="floating-label">
+        <i class="fas fa-code"></i>
+        Learning & Growing
+      </div>
+
+      <div class="floating-dot dot-one"></div>
+      <div class="floating-dot dot-two"></div>
+    </div>
+
+  </div>
 </section>
 
 <!-- ABOUT -->
 <section class="section about-section" id="about">
-    <div class="container">
-        <div class="section-heading reveal">
-            <p>GET TO KNOW ME</p>
-            <h2>About <span>Me</span></h2>
-        </div>
+  <div class="container">
 
-        <div class="about-card reveal">
-            <div class="about-icon">
-                <i class="fas fa-user-graduate"></i>
-            </div>
-
-            <div class="about-content">
-                <h3>Who Am I?</h3>
-
-                <p>
-                    Hello! I am a Second Year Computer Science and
-                    Engineering student at Ashokrao Mane Group of
-                    Institutions.
-                </p>
-
-                <p>
-                    I am interested in programming, web development and
-                    technology. I believe in continuous learning and
-                    improving my technical skills through practical work.
-                </p>
-
-                <p>
-                    My goal is to become a skilled software developer
-                    and build useful solutions through technology.
-                </p>
-
-                <div class="about-details">
-                    <div><strong>Branch:</strong> Computer Science & Engineering</div>
-                    <div><strong>Year:</strong> Second Year</div>
-                    <div><strong>Location:</strong> Kolhapur, Maharashtra</div>
-                    <div><strong>Email:</strong> panukoli53@gmail.com</div>
-                </div>
-            </div>
-        </div>
+    <div class="section-title reveal">
+      <p>GET TO KNOW ME</p>
+      <h2>About <span>Me</span></h2>
     </div>
+
+    <div class="about-card reveal">
+
+      <div class="about-icon">
+        <i class="fas fa-user-graduate"></i>
+      </div>
+
+      <div class="about-text">
+        <h3>Who Am I?</h3>
+
+        <p>
+          Hello! I am a Second Year Computer Science and
+          Engineering student at Ashokrao Mane Group of
+          Institutions.
+        </p>
+
+        <p>
+          I am interested in programming, web development
+          and exploring new technologies. I believe in
+          continuous learning and improving my skills.
+        </p>
+
+        <p>
+          My goal is to become a skilled software developer
+          and create useful solutions through technology.
+        </p>
+
+        <div class="about-details">
+          <p><strong>Branch:</strong> CSE</p>
+          <p><strong>Year:</strong> Second Year</p>
+          <p><strong>Location:</strong> Kolhapur, Maharashtra</p>
+          <p><strong>Email:</strong> panukoli53@gmail.com</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- SKILLS -->
-<section class="section skills-section" id="skills">
-    <div class="container">
-        <div class="section-heading reveal">
-            <p>WHAT I KNOW</p>
-            <h2>My <span>Skills</span></h2>
-        </div>
+<section class="section" id="skills">
+  <div class="container">
 
-        <div class="skills-grid">
-
-            <div class="skill-card reveal">
-                <i class="fab fa-html5"></i>
-                <h3>HTML</h3>
-                <p>Web Page Structure</p>
-            </div>
-
-            <div class="skill-card reveal">
-                <i class="fab fa-css3-alt"></i>
-                <h3>CSS</h3>
-                <p>Web Page Styling</p>
-            </div>
-
-            <div class="skill-card reveal">
-                <i class="fab fa-js"></i>
-                <h3>JavaScript</h3>
-                <p>Web Interactivity</p>
-            </div>
-
-            <div class="skill-card reveal">
-                <i class="fas fa-code"></i>
-                <h3>C</h3>
-                <p>Programming Basics</p>
-            </div>
-
-            <div class="skill-card reveal">
-                <i class="fas fa-laptop-code"></i>
-                <h3>C++</h3>
-                <p>Object Oriented Programming</p>
-            </div>
-
-            <div class="skill-card reveal">
-                <i class="fab fa-github"></i>
-                <h3>GitHub</h3>
-                <p>Code Management</p>
-            </div>
-
-        </div>
+    <div class="section-title reveal">
+      <p>WHAT I KNOW</p>
+      <h2>My <span>Skills</span></h2>
     </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <i class="fab fa-html5"></i>
+        <h3>HTML</h3>
+        <p>Web page structure</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS</h3>
+        <p>Web page styling</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <i class="fab fa-js"></i>
+        <h3>JavaScript</h3>
+        <p>Interactive websites</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <i class="fas fa-code"></i>
+        <h3>C Programming</h3>
+        <p>Programming fundamentals</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <i class="fas fa-laptop-code"></i>
+        <h3>C++</h3>
+        <p>Object oriented programming</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <i class="fab fa-github"></i>
+        <h3>GitHub</h3>
+        <p>Version control basics</p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <!-- CURRENTLY LEARNING -->
 <section class="section learning-section" id="learning">
-    <div class="container">
-        <div class="section-heading reveal">
-            <p>MY LEARNING JOURNEY</p>
-            <h2>Currently <span>Learning</span></h2>
-        </div>
+  <div class="container">
 
-        <div class="learning-grid">
-            <div class="learning-card reveal">
-                <i class="fas fa-globe"></i>
-                <h3>Web Development</h3>
-                <p>Learning to create responsive and interactive websites.</p>
-            </div>
-
-            <div class="learning-card reveal">
-                <i class="fas fa-database"></i>
-                <h3>Data Structures</h3>
-                <p>Understanding data organization and problem solving.</p>
-            </div>
-
-            <div class="learning-card reveal">
-                <i class="fas fa-brain"></i>
-                <h3>Programming</h3>
-                <p>Improving coding and logical thinking skills.</p>
-            </div>
-        </div>
+    <div class="section-title reveal">
+      <p>MY LEARNING JOURNEY</p>
+      <h2>Currently <span>Learning</span></h2>
     </div>
+
+    <div class="learning-grid">
+
+      <div class="learning-card reveal">
+        <i class="fas fa-globe"></i>
+        <h3>Web Development</h3>
+        <p>Learning to create responsive websites.</p>
+      </div>
+
+      <div class="learning-card reveal">
+        <i class="fas fa-database"></i>
+        <h3>Data Structures</h3>
+        <p>Learning data organization and algorithms.</p>
+      </div>
+
+      <div class="learning-card reveal">
+        <i class="fas fa-brain"></i>
+        <h3>Problem Solving</h3>
+        <p>Improving logical thinking and coding skills.</p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <!-- PROJECTS -->
 <section class="section projects-section" id="projects">
-    <div class="container">
-        <div class="section-heading reveal">
-            <p>MY WORK</p>
-            <h2>My <span>Projects</span></h2>
-        </div>
+  <div class="container">
 
-        <div class="projects-grid">
-
-            <article class="project-card reveal">
-                <div class="project-icon">
-                    <i class="fas fa-seedling"></i>
-                </div>
-
-                <div class="project-info">
-                    <span class="project-status">Project Idea / In Progress</span>
-                    <h3>AgriSmart-X</h3>
-
-                    <p>
-                        An AI-powered smart farming assistant concept
-                        designed to help farmers with crop information,
-                        weather updates, market information and irrigation.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>AI Concept</span>
-                        <span>Web Development</span>
-                        <span>Agriculture</span>
-                    </div>
-
-                    <p class="project-note">GitHub link will be added when the repository is ready.</p>
-                </div>
-            </article>
-
-            <article class="project-card reveal">
-                <div class="project-icon">
-                    <i class="fas fa-user-check"></i>
-                </div>
-
-                <div class="project-info">
-                    <span class="project-status">College Mini Project</span>
-                    <h3>Smart Attendance System</h3>
-
-                    <p>
-                        A C programming mini project concept that records
-                        student attendance and identifies students whose
-                        attendance may fall below 75%.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>C Programming</span>
-                        <span>Structures</span>
-                        <span>Logic Building</span>
-                    </div>
-
-                    <p class="project-note">GitHub link will be added when the repository is ready.</p>
-                </div>
-            </article>
-
-        </div>
+    <div class="section-title reveal">
+      <p>MY WORK</p>
+      <h2>My <span>Projects</span></h2>
     </div>
+
+    <div class="projects-grid">
+
+      <article class="project-card reveal">
+        <div class="project-icon">
+          <i class="fas fa-seedling"></i>
+        </div>
+
+        <div class="project-content">
+          <span class="status">In Progress / Project Idea</span>
+
+          <h3>AgriSmart-X</h3>
+
+          <p>
+            An AI-powered smart farming assistant concept
+            designed to help farmers with crop information,
+            weather updates, market information and irrigation.
+          </p>
+
+          <div class="tags">
+            <span>AI Concept</span>
+            <span>Web Development</span>
+            <span>Agriculture</span>
+          </div>
+
+          <p class="project-note">
+            Repository link will be added when available.
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-icon">
+          <i class="fas fa-user-check"></i>
+        </div>
+
+        <div class="project-content">
+          <span class="status">College Mini Project</span>
+
+          <h3>Smart Attendance System</h3>
+
+          <p>
+            A C programming project concept to record student
+            attendance and identify students whose attendance
+            may fall below 75%.
+          </p>
+
+          <div class="tags">
+            <span>C Programming</span>
+            <span>Structures</span>
+            <span>Logic Building</span>
+          </div>
+
+          <p class="project-note">
+            Repository link will be added when available.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
 </section>
 
 <!-- EDUCATION -->
-<section class="section education-section" id="education">
-    <div class="container">
-        <div class="section-heading reveal">
-            <p>MY ACADEMIC JOURNEY</p>
-            <h2>My <span>Education</span></h2>
-        </div>
+<section class="section" id="education">
+  <div class="container">
 
-        <div class="education-timeline">
-
-            <div class="education-card reveal">
-                <div class="education-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-
-                <div>
-                    <span class="education-label">Currently Pursuing</span>
-                    <h3>Bachelor of Technology (B.Tech)</h3>
-                    <h4>Computer Science & Engineering</h4>
-                    <p>Ashokrao Mane Group of Institutions</p>
-                    <p>Second Year</p>
-                </div>
-            </div>
-
-            <div class="education-card reveal">
-                <div class="education-icon">
-                    <i class="fas fa-school"></i>
-                </div>
-
-                <div>
-                    <span class="education-label">School Education</span>
-                    <h3>Higher Secondary / School Education</h3>
-                    <p>Kodoli Highschool, Kodoli</p>
-                </div>
-            </div>
-
-        </div>
+    <div class="section-title reveal">
+      <p>MY ACADEMIC JOURNEY</p>
+      <h2>My <span>Education</span></h2>
     </div>
+
+    <div class="education-list">
+
+      <div class="education-card reveal">
+        <div class="education-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+
+        <div>
+          <span class="status">Currently Pursuing</span>
+          <h3>Bachelor of Technology (B.Tech)</h3>
+          <h4>Computer Science & Engineering</h4>
+          <p>Ashokrao Mane Group of Institutions</p>
+          <p>Second Year</p>
+        </div>
+      </div>
+
+      <div class="education-card reveal">
+        <div class="education-icon">
+          <i class="fas fa-school"></i>
+        </div>
+
+        <div>
+          <span class="status">School Education</span>
+          <h3>School Education</h3>
+          <p>Kodoli Highschool, Kodoli</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <!-- RESUME -->
 <section class="section resume-section" id="resume">
-    <div class="container">
-        <div class="section-heading reveal">
-            <p>MY PROFILE</p>
-            <h2>My <span>Resume</span></h2>
-        </div>
+  <div class="container">
 
-        <div class="resume-card reveal">
-            <i class="fas fa-file-pdf"></i>
-            <h3>Want to know more about me?</h3>
-            <p>
-                View or download my resume to learn about my education,
-                skills and experience.
-            </p>
-
-            <div class="resume-buttons">
-                <a href="resume.pdf" target="_blank" class="btn primary-btn">
-                    <i class="fas fa-eye"></i> View Resume
-                </a>
-
-                <a href="resume.pdf" download class="btn secondary-btn">
-                    <i class="fas fa-download"></i> Download Resume
-                </a>
-            </div>
-        </div>
+    <div class="section-title reveal">
+      <p>MY PROFILE</p>
+      <h2>My <span>Resume</span></h2>
     </div>
+
+    <div class="resume-card reveal">
+      <i class="fas fa-file-pdf"></i>
+
+      <h3>Explore My Resume</h3>
+
+      <p>
+        Learn more about my education, technical skills
+        and career goals.
+      </p>
+
+      <div class="resume-buttons">
+
+        <a href="resume.pdf" target="_blank"
+           rel="noopener noreferrer" class="btn primary-btn">
+          <i class="fas fa-eye"></i> View Resume
+        </a>
+
+        <a href="resume.pdf" download
+           class="btn outline-btn">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- CONTACT -->
 <section class="section contact-section" id="contact">
-    <div class="container">
-        <div class="section-heading reveal">
-            <p>GET IN TOUCH</p>
-            <h2>Contact <span>Me</span></h2>
-        </div>
+  <div class="container">
 
-        <div class="contact-wrapper">
-
-            <div class="contact-info reveal">
-                <h3>Let's Connect!</h3>
-                <p>
-                    Have a question or want to connect?
-                    Feel free to send me a message.
-                </p>
-
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <h4>Email</h4>
-                        <p>panukoli53@gmail.com</p>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <h4>Location</h4>
-                        <p>Kolhapur, Maharashtra</p>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <div>
-                        <h4>GitHub</h4>
-                        <a href="https://github.com/panukoli53-arch"
-                           target="_blank" rel="noopener noreferrer">
-                            Visit my GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <form class="contact-form reveal" id="contactForm">
-                <input type="text" id="name" placeholder="Your Name" required>
-
-                <input type="email" id="email" placeholder="Your Email" required>
-
-                <textarea id="message" rows="6"
-                    placeholder="Write your message..." required></textarea>
-
-                <button type="submit" class="btn primary-btn">
-                    Send Message <i class="fas fa-paper-plane"></i>
-                </button>
-
-                <p id="formStatus" aria-live="polite"></p>
-            </form>
-
-        </div>
+    <div class="section-title reveal">
+      <p>LET'S CONNECT</p>
+      <h2>Contact <span>Me</span></h2>
     </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+        <h3>Get In Touch!</h3>
+
+        <p>
+          I would love to connect, learn and share ideas.
+          Feel free to contact me through the links below.
+        </p>
+
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=panukoli53@gmail.com"
+               target="_blank" rel="noopener noreferrer">
+              Send me an Email
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fab fa-github"></i>
+          <div>
+            <h4>GitHub</h4>
+            <a href="https://github.com/panukoli53-arch"
+               target="_blank" rel="noopener noreferrer">
+              Visit GitHub Profile
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <div>
+            <h4>LinkedIn</h4>
+            <a href="https://www.linkedin.com/"
+               target="_blank" rel="noopener noreferrer">
+              Open LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <a href="https://github.com/panukoli53-arch"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=panukoli53@gmail.com"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- CONTACT FORM -->
+      <form class="contact-form" id="contactForm">
+
+        <input type="text" id="name"
+          placeholder="Your Name" required>
+
+        <input type="email" id="email"
+          placeholder="Your Email" required>
+
+        <textarea id="message" rows="6"
+          placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="btn primary-btn">
+          Send Message <i class="fas fa-paper-plane"></i>
+        </button>
+
+        <p id="formStatus" aria-live="polite"></p>
+
+      </form>
+
+    </div>
+  </div>
 </section>
 
 </main>
 
 <!-- FOOTER -->
 <footer class="footer">
-    <div class="container">
-        <a href="#home" class="logo">Pixel<span>Bloom.</span></a>
+  <div class="container">
 
-        <p>Designed & Built with ❤️ by Pranjali</p>
+    <a href="#home" class="logo">Pixel<span>Bloom.</span></a>
 
-        <p class="copyright">
-            © <span id="year"></span> PixelBloom. All Rights Reserved.
-        </p>
-    </div>
+    <p>Designed & Built with care by Pranjali</p>
+
+    <p>© <span id="year"></span> PixelBloom. All Rights Reserved.</p>
+
+    <a href="#home" class="footer-top">Back to Top ↑</a>
+
+  </div>
 </footer>
 
 <button id="backToTop" aria-label="Back to top">
-    <i class="fas fa-arrow-up"></i>
+  <i class="fas fa-arrow-up"></i>
 </button>
 
 <script src="script.js"></script>
