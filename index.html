@@ -1,138 +1,257 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PixelBloom | Pranjali's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-     
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+    <title>PixelBloom | My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
+<!-- NAVBAR -->
+<header>
     <nav class="navbar">
-        <h2 class="logo">PixelBloom</h2>
+        <a href="#home" class="logo">PixelBloom.</a>
 
-        <div class="nav-links">
-    <a href="#home"><i class="fas fa-home"></i> Home</a>
-    <a href="#about"><i class="fas fa-user"></i> About</a>
-    <a href="#skills"><i class="fas fa-code"></i> Skills</a>
-    <a href="#projects"><i class="fas fa-book"></i> Learning</a>
-    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#learning">Learning</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <button id="menuToggle" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
+</header>
 
-    <!-- Home -->
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+<!-- HOME -->
+<section id="home" class="hero reveal">
+    <div class="hero-content">
+        <p class="welcome">WELCOME TO MY PORTFOLIO</p>
 
-            <h1>Hi, I'm <span>Pranjali</span></h1>
+        <h1>Hello, I'm <span>Pranjali</span></h1>
 
-            <h3>Computer Science Engineering Student</h3>
-
-            <p>
-                I am passionate about technology,
-                programming and learning new skills.
-                I love exploring creative ideas and
-                improving myself every day.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#about" class="btn">About Me</a>
-                <a href="#contact" class="btn-outline">Contact Me</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- About -->
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>
-            Hello! I am Pranjali, a Second Year
-            Computer Science Engineering student.
-            I enjoy learning new technologies,
-            improving my skills and exploring
-            creative ideas. My goal is to become
-            a skilled software developer.
-        </p>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section">
-        <h2>My Skills</h2>
-
-        <div class="skills-container">
-            <div class="skill">C Programming</div>
-            <div class="skill">C++</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Data Structures</div>
-        </div>
-    </section>
-
-    <!-- Currently Learning -->
-    <section id="projects" class="section">
-        <h2>Currently Learning</h2>
+        <h2>Computer Science & Engineering Student</h2>
 
         <p>
-            I am exploring programming and web
-            development and continuously improving
-            my technical knowledge.
+            I am passionate about technology, programming
+            and learning new things. I love creating
+            beautiful and useful websites.
         </p>
 
-        <div class="learning-container">
-            <div class="learning-card">C Programming</div>
-            <div class="learning-card">C++</div>
-            <div class="learning-card">Data Structures</div>
-            <div class="learning-card">HTML & CSS</div>
-            <div class="learning-card">JavaScript</div>
-        </div>
-    </section>
+        <a href="#about" class="btn">Explore More</a>
+        <a href="#contact" class="btn outline-btn">Contact Me</a>
+    </div>
+</section>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
+<!-- ABOUT -->
+<section id="about" class="section reveal">
+    <h2>About Me</h2>
+
+    <div class="about-content">
+        <div class="about-icon">
+            <i class="fas fa-user-graduate"></i>
+        </div>
 
         <p>
-            I would love to connect with you!
-            Feel free to contact me.
+            Hello! I am a Computer Science and Engineering
+            student at Ashokrao Mane Group of Institutions.
+            I enjoy learning new technologies and improving
+            my programming skills.
         </p>
 
-        
-<div class="contact-links">
+        <p>
+            I am hardworking, creative, and interested in
+            teamwork. My goal is to become a skilled
+            software developer.
+        </p>
+    </div>
+</section>
 
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=panukoli53@gmail.com" target="_blank">
-        <i class="fas fa-envelope"></i> Email Me
-    </a>
+<!-- SKILLS -->
+<section id="skills" class="section skills-section reveal">
+    <h2>My Skills</h2>
 
-    <a href="https://www.linkedin.com/" target="_blank">
-        <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
+    <div class="skills-container">
 
-    <a href="https://github.com/" target="_blank">
-        <i class="fab fa-github"></i> GitHub
-    </a>
+        <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <h3>HTML</h3>
+            <p>Web Structure</p>
+        </div>
 
-</div>
+        <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS</h3>
+            <p>Web Designing</p>
+        </div>
 
-    </section>
+        <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+            <p>Web Interaction</p>
+        </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <h3>PixelBloom</h3>
-        <p>Designed & Created by Pranjali</p>
-        <p>© 2026 All Rights Reserved.</p>
-    </footer>
+        <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <h3>C Programming</h3>
+            <p>Programming Basics</p>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="skill-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>C++</h3>
+            <p>Object Oriented Programming</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-github"></i>
+            <h3>GitHub</h3>
+            <p>Version Control Basics</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CURRENTLY LEARNING -->
+<section id="learning" class="section reveal">
+    <h2>Currently Learning</h2>
+
+    <div class="learning-container">
+
+        <div class="learning-card">
+            <i class="fas fa-globe"></i>
+            <h3>Web Development</h3>
+            <p>Learning HTML, CSS and JavaScript.</p>
+        </div>
+
+        <div class="learning-card">
+            <i class="fas fa-database"></i>
+            <h3>Data Structures</h3>
+            <p>Learning data organization and algorithms.</p>
+        </div>
+
+        <div class="learning-card">
+            <i class="fas fa-code"></i>
+            <h3>Programming</h3>
+            <p>Improving C and C++ programming skills.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="section resume-section reveal">
+    <h2>My Resume</h2>
+
+    <div class="resume-card">
+        <div class="resume-heading">
+            <h3>Pranjali Koli</h3>
+            <p>Computer Science & Engineering Student</p>
+            <p>Kolhapur, Maharashtra</p>
+        </div>
+
+        <hr>
+
+        <h3>Career Objective</h3>
+        <p>
+            Motivated Computer Science student interested
+            in technology, programming and software development.
+            Eager to learn new skills and gain practical experience.
+        </p>
+
+        <h3>Education</h3>
+        <p><strong>B.Tech - Computer Science & Engineering</strong></p>
+        <p>Ashokrao Mane Group of Institutions</p>
+
+        <h3>Technical Skills</h3>
+        <p>HTML, CSS, JavaScript, C, C++ and GitHub Basics</p>
+
+        <h3>Strengths</h3>
+        <p>Teamwork, Hardworking, Positive Attitude, Quick Learning</p>
+
+        <h3>Hobbies</h3>
+        <p>Drawing and Learning New Technologies</p>
+
+        <button class="btn" onclick="window.print()">
+            <i class="fas fa-download"></i> Print / Save as PDF
+        </button>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section reveal">
+    <h2>Contact Me</h2>
+
+    <p class="contact-intro">
+        Have a question or want to connect? Send me a message.
+    </p>
+
+    <div class="contact-container">
+
+        <form id="contactForm" class="contact-form" novalidate>
+
+            <input type="text" id="name"
+                   placeholder="Your Name" required>
+
+            <input type="email" id="email"
+                   placeholder="Your Email" required>
+
+            <textarea id="message"
+                      placeholder="Your Message"
+                      required></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+            <p id="formStatus" role="status"></p>
+
+        </form>
+
+    </div>
+
+    <div class="social-links">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href="mailto:panukoli53@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 PixelBloom. All Rights Reserved.</p>
+    <p>Designed with creativity and passion.</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
-
