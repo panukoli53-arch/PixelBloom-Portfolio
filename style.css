@@ -1,4 +1,8 @@
 
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,81 +11,87 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #f8f5ff;
-    color: #333;
-    padding: 20px;
+    color: #30243d;
+    padding: 15px;
+    line-height: 1.7;
 }
 
 /* Navbar */
 .navbar {
     position: sticky;
-    top: 0;
+    top: 10px;
     z-index: 1000;
-    background: white;
-    padding: 20px;
+    background: rgba(255,255,255,0.96);
+    padding: 18px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(70,30,110,0.10);
 }
 
 .logo {
     color: #7b2cbf;
-    font-size: 25px;
+    font-size: 26px;
+    font-weight: 800;
 }
 
 .nav-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 22px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #7b2cbf;
-    font-weight: bold;
+    color: #49345f;
+    font-weight: 600;
     font-size: 14px;
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #c77dff;
+    color: #a855f7;
 }
 
-/* Home */
+/* Home Section */
 .hero {
-    min-height: 450px;
-    margin-top: 35px;
-    padding: 70px 20px;
+    min-height: 480px;
+    margin-top: 30px;
+    padding: 70px 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, #6a11cb, #c77dff);
+    background: linear-gradient(135deg, #6a11cb, #a855f7, #d8b4fe);
     color: white;
-    border-radius: 22px;
-    box-shadow: 0 15px 40px rgba(106,17,203,0.2);
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(106,17,203,0.20);
 }
 
 .hero-content {
-    max-width: 700px;
+    max-width: 750px;
 }
 
 .welcome {
     letter-spacing: 3px;
     font-size: 13px;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
 .hero h1 {
-    font-size: 42px;
+    font-size: clamp(32px, 5vw, 52px);
     margin-bottom: 15px;
+    font-weight: 800;
 }
 
 .hero h1 span {
@@ -89,13 +99,15 @@ body {
 }
 
 .hero h3 {
+    font-size: 21px;
     margin-bottom: 20px;
 }
 
 .hero p {
-    line-height: 1.8;
+    line-height: 1.9;
 }
 
+/* Buttons */
 .hero-buttons {
     display: flex;
     justify-content: center;
@@ -105,10 +117,12 @@ body {
 }
 
 .btn, .btn-outline {
-    padding: 13px 25px;
-    border-radius: 10px;
+    display: inline-block;
+    padding: 13px 28px;
+    border-radius: 30px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
+    transition: 0.3s;
 }
 
 .btn {
@@ -121,84 +135,105 @@ body {
     color: white;
 }
 
+.btn:hover, .btn-outline:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
 /* Common Sections */
 .section {
-    display: block;
-    opacity: 1;
-    visibility: visible;
     background: white;
     margin: 30px 0;
-    padding: 40px 20px;
-    border-radius: 18px;
+    padding: 45px 25px;
+    border-radius: 22px;
     text-align: center;
     box-shadow: 0 8px 24px rgba(70,30,110,0.08);
+    scroll-margin-top: 100px;
 }
 
 .section h2 {
     color: #7b2cbf;
-    font-size: 28px;
+    font-size: clamp(24px, 4vw, 32px);
     margin-bottom: 20px;
+    font-weight: 800;
 }
 
 .section p {
-    max-width: 650px;
+    max-width: 700px;
     margin: auto;
     line-height: 1.9;
-    font-size: 16px;
+    font-size: 15px;
 }
 
-/* Skills */
-.skills-container,
-.learning-container,
-.contact-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 25px;
+/* Skills - CSS Grid */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 18px;
+    margin-top: 30px;
+}
+
+/* Learning Cards - CSS Grid */
+.learning-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+    margin-top: 30px;
 }
 
 .skill, .learning-card {
     background: #f1e5ff;
     color: #7b2cbf;
-    padding: 15px 22px;
-    border-radius: 12px;
-    font-weight: bold;
+    padding: 20px 15px;
+    border-radius: 15px;
+    font-weight: 700;
+    border: 1px solid #e4d0ff;
     transition: 0.3s;
 }
 
 .skill:hover, .learning-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
     background: #7b2cbf;
     color: white;
+    box-shadow: 0 10px 20px rgba(123,44,191,0.20);
 }
 
 /* Contact */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
 .contact-links a {
     text-decoration: none;
     background: #7b2cbf;
     color: white;
-    padding: 13px 25px;
-    border-radius: 10px;
-    font-weight: bold;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: 0.3s;
 }
 
 .contact-links a:hover {
-    background: #c77dff;
+    background: #a855f7;
+    transform: translateY(-4px);
 }
 
 /* Footer */
 .footer {
-    background: linear-gradient(135deg, #6a11cb, #c77dff);
+    background: linear-gradient(135deg, #6a11cb, #a855f7);
     color: white;
-    padding: 30px 15px;
+    padding: 35px 15px;
     margin-top: 35px;
-    border-radius: 18px;
+    border-radius: 20px;
     text-align: center;
 }
 
 .footer h3 {
-    font-size: 25px;
+    font-size: 26px;
     margin-bottom: 12px;
 }
 
@@ -207,35 +242,140 @@ body {
     margin-top: 8px;
 }
 
-/* Mobile Design */
-@media (max-width: 768px) {
-    body {
-        padding: 12px;
-    }
-
+/* Tablet Responsive */
+@media (max-width: 900px) {
     .navbar {
-        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 
     .nav-links {
         justify-content: center;
+    }
+
+    .hero {
+        min-height: 420px;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 8px;
+    }
+
+    .navbar {
+        padding: 15px 10px;
         gap: 12px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .nav-links {
+        gap: 10px 15px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
     }
 
     .hero {
         min-height: 400px;
         padding: 45px 15px;
-    }
-
-    .hero h1 {
-        font-size: 32px;
+        border-radius: 18px;
     }
 
     .hero h3 {
         font-size: 17px;
     }
 
+    .hero p {
+        font-size: 14px;
+    }
+
     .section {
         padding: 30px 15px;
+        margin: 20px 0;
+    }
+
+    .skills-container,
+    .learning-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .skill, .learning-card {
+        padding: 15px 8px;
+        font-size: 13px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+    }
+
+    .contact-links a {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 25px 12px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 360px) {
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .skills-container,
+    .learning-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Improved Navbar */
+.navbar {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    padding: 15px 25px;
+}
+
+.nav-links a {
+    padding: 8px 5px;
+    border-radius: 6px;
+}
+
+.nav-links a:hover {
+    background: #f1e5ff;
+}
+
+/* Better Mobile Layout */
+@media (max-width: 600px) {
+    .navbar {
+        position: sticky;
+        top: 0;
+        padding: 12px 8px;
+        gap: 8px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 8px 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .skills-container,
+    .learning-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
